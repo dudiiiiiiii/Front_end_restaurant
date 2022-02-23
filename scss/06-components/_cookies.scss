@@ -1,0 +1,50 @@
+@use '../02-tools/mixins' as *;
+
+.cookies {
+
+    //display:none;
+    font-family: 'Roboto', 'sans-serig';
+    width: 100%;
+    line-height: 1.8rem;
+    padding: .5rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.4rem;
+
+    &__text {
+        
+        width: 70%;
+        text-align: justify;
+        padding: .5rem;
+
+        @include medium {
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+    &__close {
+        width: 30%;
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        padding: .5rem;
+        text-align: center;
+
+        @include medium {
+            width: 10%;
+        }
+
+        & a {
+            
+            position: absolute;
+            right: 10%;
+            font-size: 1.4rem;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+}

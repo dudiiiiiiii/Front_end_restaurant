@@ -361,10 +361,57 @@ p {
   background-position: -155px -43px;
 }
 
+.cookies {
+  font-family: "Roboto", "sans-serig";
+  width: 100%;
+  line-height: 1.8rem;
+  padding: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.cookies__text {
+  width: 70%;
+  text-align: justify;
+  padding: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .cookies__text {
+    width: 90%;
+    text-align: center;
+  }
+}
+.cookies__close {
+  width: 30%;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .cookies__close {
+    width: 10%;
+  }
+}
+.cookies__close a {
+  position: absolute;
+  right: 10%;
+  font-size: 1.4rem;
+}
+.cookies__close a:hover {
+  color: red;
+}
+
 .site-body__social {
   position: fixed;
   left: -135px;
   bottom: 20%;
+}
+.site-body__cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .site-header {
